@@ -48,10 +48,10 @@ The project follows a clean architecture approach with the repository pattern:
    ```
 3. Create a `.env` file with the following variables:
    ```
-   DATABASE_URL="mongodb+srv://<db_username>:<db_password>@db_url/<collection_name>?retryWrites=true&w=majority&appName=<collection_name>" //use a real mongodb database
+   DATABASE_URL="mongodb+srv://<db_username>:<db_password>@<db_url>/<collection_name>?retryWrites=true&w=majority&appName=<collection_name>" //use a real mongodb database
 
    REDIS_URL="redis://localhost:6379"
-   
+
    PORT=3000
    ```
 4. Generate Prisma client:

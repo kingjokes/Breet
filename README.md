@@ -145,4 +145,3 @@ The checkout process uses MongoDB transactions to ensure atomicity:
 5. Release locks
 
 If any step fails, the entire transaction is rolled back.
-*/

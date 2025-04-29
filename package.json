@@ -1,0 +1,39 @@
+{
+  "name": "breet-shopping-cart",
+  "version": "1.0.0",
+  "description": "Shopping Cart API",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "prisma:generate": "prisma generate",
+    "prisma:push": "prisma db push",
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.4.1",
+    "compression": "^1.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^7.2.0",
+    "http-status-codes": "^2.2.0",
+    "ioredis": "^5.3.2",
+    "morgan": "^1.10.0",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.5",
+    "@types/cors": "^2.8.14",
+    "@types/express": "^4.17.18",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.8.2",
+    "prisma": "^5.4.1",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  }
+}
